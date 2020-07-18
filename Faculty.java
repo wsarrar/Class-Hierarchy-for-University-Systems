@@ -6,7 +6,7 @@ public class Faculty extends Employee {
 	
 	public Faculty(String fName, String lName, String pNum, 
 	double pR, int pS, String d) 
-	{
+	{ 
 		super(fName, lName, pNum, pR, pS);
 		this.department = d;
 	}
