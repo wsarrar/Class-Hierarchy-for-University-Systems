@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-public class Faculty extends Employee {
+public class Faculty extends Employee 
+{
 	
 	private String department;
 	private String [] classesTeach;
