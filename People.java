@@ -1,5 +1,7 @@
 
-public class People {
+public class People 
+{
+	
 	protected String first_name;
 	protected String last_name;
 	protected String phoneNumber;
