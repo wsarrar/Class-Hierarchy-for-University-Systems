@@ -1,3 +1,4 @@
+// Academic Project (2019) 
 import java.util.*;
 public class University {
 	
@@ -8,10 +9,8 @@ public class University {
 		char choice = 'A';
 		String line;
 		Scanner scan = new Scanner(System.in);
-		// read the name and the location of the university here
-
-
-	do{
+	do
+	{
 		System.out.print("What action would you like to perform?\n");
         printMenu();
         line = scan.nextLine();
@@ -24,12 +23,7 @@ public class University {
 		switch(choice)
 		{
 		case 'A':
-			// add a Student here
-			/* read the first name, last name, phone number, major as parameters and then call the
-			 * constructor of the Student class to create the instance
-			 * then read the gpa, call setGpa method of the student to set the gpa
-			 * finally add the student instance to the people list
-			 */
+			// Adds a student by reading input for the first name, last name, phone number, and major as parameters
 			Student st1 = new Student(line, line, line, line);
 			System.out.println("Enter your first name: ");
 			String firstName = scan.nextLine();
@@ -41,10 +35,13 @@ public class University {
 			System.out.println("Enter your major: ");
 			String major = scan.nextLine();
 			st1.changeMajor(major);
+			//  Calls the constructor of the Student class to create the instance then read the gpa, 
 			st1 = new Student(firstName, lastName, pNumber, major);
 			System.out.println("Enter your GPA: ");
 			double gpa = scan.nextDouble();
+			// Calls setGpa method of the student to set the gpa 
 			st1.setGpa(gpa);
+			// Adds the student instance to the people list
 			people.add(st1);
 			break;
 		
