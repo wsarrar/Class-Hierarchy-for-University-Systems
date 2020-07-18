@@ -1,5 +1,6 @@
 
-public class Student extends People {
+public class Student extends People 
+{
 	
 	private String major;
 	private double gpa;
