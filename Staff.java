@@ -1,5 +1,6 @@
 
-public class Staff extends Employee {
+public class Staff extends Employee 
+{
 	
 	private String title;
 	
